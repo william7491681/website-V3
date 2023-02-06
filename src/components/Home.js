@@ -20,39 +20,53 @@ function Home() {
                   Software Developer
                 </p>
               </div>
-              <div className='hidden md:flex flex-col text-2xl content-between'>
-                <p className='mt-2'>Address: 152 S. Tish Drive</p>
-                <p className='mt-2'>Phone: (405)-888-2607</p>
-                <p className='mt-2'>Email: Williamdines@rocketmail.com</p>
-                <p className='mt-2'>
-                  Linkedin:
-                  <a href="http://Linkedin.com/in/William-Dines" target="_blank" rel="noopener noreferrer"
-                  className='text-blue-700 visited:text-purple-800'>&nbsp;Linkedin.com/in/William-Dines</a>
-                </p>
-                <p className='mt-2'>
-                  Github:
-                  <a href="http://Github.com/william7491681" target="_blank" rel="noopener noreferrer"
-                  className='text-blue-700 visited:text-purple-800'>&nbsp;Github.com/William7491681</a>
-                </p>
+              <div className='hidden md:flex text-2xl content-between'>
+                <div>
+                  <p className='mt-2 font-bold'>Address: </p>
+                  <p className='mt-2 font-bold'>Phone: </p>
+                  <p className='mt-2 font-bold'>Email: </p>
+                  <p className='mt-2 font-bold'>Linkedin: </p>
+                  <p className='mt-2 font-bold'>Github: </p>
+                </div>
+                <div className='ml-5'>
+                  <p className='mt-2 ml-[6px]'>152 S. Tish Drive</p>
+                  <p className='mt-2 ml-[6px]'>(405)-888-2607</p>
+                  <p className='mt-2 ml-[6px]'>Williamdines@rocketmail.com</p>
+                  <p className='mt-2'>
+                    <a href="http://Linkedin.com/in/William-Dines" target="_blank" rel="noopener noreferrer"
+                    className='text-blue-700 visited:text-purple-800'>&nbsp;Linkedin.com/in/William-Dines</a>
+                  </p>
+                  <p className='mt-2'>
+                    <a href="http://Github.com/william7491681" target="_blank" rel="noopener noreferrer"
+                    className='text-blue-700 visited:text-purple-800'>&nbsp;Github.com/William7491681</a>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className='w-5/6 flex md:hidden flex-col items-start pl-2 pt-2 self-center'>
-        <p className='mt-2'>Address: 152 S. Tish Drive</p>
-        <p className='mt-2'>Phone: (405)-888-2607</p>
-        <p className='mt-2'>Email: Williamdines@rocketmail.com</p>
-        <p className='mt-2'>
-          Linkedin:
-          <a href="http://Linkedin.com/in/William-Dines" target="_blank" rel="noopener noreferrer"
-          className='text-blue-700 visited:text-purple-800'>&nbsp;Linkedin.com/in/William-Dines</a>
-        </p>
-        <p className='mt-2'>
-          Github:
-          <a href="http://Github.com/william7491681" target="_blank" rel="noopener noreferrer"
-          className='text-blue-700 visited:text-purple-800'>&nbsp;Github.com/William7491681</a>
-        </p>
+      <div className='w-5/6 flex md:hidden items-start pl-2 pt-10 self-center'>
+        <div>
+          <p className='mt-2 font-bold'>Address: </p>
+          <p className='mt-2 font-bold'>Phone: </p>
+          <p className='mt-2 font-bold'>Email: </p>
+          <p className='mt-2 font-bold'>Linkedin: </p>
+          <p className='mt-2 font-bold'>Github: </p>
+        </div>
+        <div>
+          <p className='mt-2 ml-4'>152 S. Tish Drive</p>
+          <p className='mt-2 ml-4'>(405)-888-2607</p>
+          <p className='mt-2 ml-4'>Williamdines@rocketmail.com</p>
+          <p className='mt-2 ml-3'>
+            <a href="http://Linkedin.com/in/William-Dines" target="_blank" rel="noopener noreferrer"
+            className='text-blue-700 visited:text-purple-800'>&nbsp;Linkedin.com/in/William-Dines</a>
+          </p>
+          <p className='mt-2 ml-3'>
+            <a href="http://Github.com/william7491681" target="_blank" rel="noopener noreferrer"
+            className='text-blue-700 visited:text-purple-800'>&nbsp;Github.com/William7491681</a>
+          </p>
+        </div>
       </div>
     </div>
   )
