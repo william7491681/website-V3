@@ -1,10 +1,13 @@
 import React from 'react'
-import william from "./William.jpg"
+import william from "./assets/William.jpg"
 
 
-function Home() {
+function Home(props) {
+  const darkStyles = {
+    test: ["Here we go"]
+  }
   return (
-    <div id="Home" className='flex flex-col md:flex-row justify-center pt-10'>
+    <div id="Home" className='flex flex-col md:flex-row justify-center py-10'>
       <div className='flex justify-evenly h-5/6'>
         <div className='flex justify-evenly h-5/6'>
           <div className='w-1/3 self-end'>
