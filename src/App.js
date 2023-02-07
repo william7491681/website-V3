@@ -8,7 +8,7 @@ function App() {
     setDarkMode(!DarkMode);
   }
   return (
-    <div>
+    <div className={DarkMode===true ? "bg-neutral-800" : null}>
       <div className='hidden md:block fixed right-20 mt-3'>
         { DarkMode ?
           <MdWbSunny className="hover:cursor-pointer text-white" size={35} onClick={toggleDarkMode}/>
