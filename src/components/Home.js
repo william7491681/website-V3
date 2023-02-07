@@ -20,12 +20,9 @@ function Home(props) {
   const isDarkMode = props.DarkMode;
   return (
     <div id="Home" className={isDarkMode ? darkStyles.home : lightStyles.home}>
-      <div className='flex justify-evenly h-5/6'>
         <div className='flex justify-evenly h-5/6'>
-          <div className='w-1/3 self-end'>
-            <div className='h-2/3'>
-              <img src={william} alt="William" className='h-2/3'/>
-            </div>
+          <div className='w-1/3 h-full self-end justify-self-center'>
+            <img src={william} alt="William" className='w-full h-full'/>
           </div>
           <div className='w-1/3 md:w-2/3 md:flex md:justify-center'>
             <div className='w-5/6 md:flex md:flex-col justify-evenly'>
@@ -62,7 +59,6 @@ function Home(props) {
             </div>
           </div>
         </div>
-      </div>
       <div className='w-5/6 flex md:hidden items-start pl-2 pt-10 self-center'>
         <div>
           <p className={isDarkMode ? darkStyles.leftList : lightStyles.leftList}>Address: </p>

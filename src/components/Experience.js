@@ -90,8 +90,7 @@ function Experience(props) {
               <p className={isDarkMode ? darkStyles.skillDescriptions : lightStyles.skillDescriptions}>
                 I have experience with web development using React.js, HTML, CSS/Tailwind, Flask, and more.
                 <br /><br />
-                I am newer to website development, but I am quickly learning different libraries/frameworks
-                such as React.js, Flask, Tailwind, and more.
+                I am newer to website development, but I am quickly learning different libraries/frameworks.
                 <br /><br />
                 Currently, I am working on side projects involving web development, such as this website.
               </p>
@@ -147,8 +146,7 @@ function Experience(props) {
             <p className={isDarkMode ? darkStyles.mobileSkillDescriptions : lightStyles.mobileSkillDescriptions}>
                 I have experience with web development using React.js, HTML, CSS/Tailwind, Flask, and more.
                 <br /><br />
-                I am newer to website development, but I am quickly learning different libraries/frameworks
-                such as React.js, Flask, Tailwind, and more.
+                I am newer to website development, but I am quickly learning different libraries/frameworks.
                 <br /><br />
                 Currently, I am working on side projects involving web development, including this website.
                 <br /><br />

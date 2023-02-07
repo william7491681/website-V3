@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      backgroundImage: {
+        "william": "url(../src/components/assets/William.jpg)"
+      },
       keyframes: {
         menu: {
           "0%" : { opacity: "0"},
