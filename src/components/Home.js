@@ -23,7 +23,9 @@ function Home(props) {
       <div className='flex justify-evenly h-5/6'>
         <div className='flex justify-evenly h-5/6'>
           <div className='w-1/3 self-end'>
-            <img src={william} alt="William" className='h-2/3'/>
+            <div className='h-2/3'>
+              <img src={william} alt="William" className='h-2/3'/>
+            </div>
           </div>
           <div className='w-1/3 md:w-2/3 md:flex md:justify-center'>
             <div className='w-5/6 md:flex md:flex-col justify-evenly'>
