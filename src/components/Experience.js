@@ -36,63 +36,120 @@ function Experience(props) {
             id="Experience">Experience</h1>
           </div>
         </div>
-        <div className='flex justify-around mt-20'>
-          <div className='w-1/3 flex flex-col items-center'>
-            <p className={isDarkMode ? darkStyles.skillTitles : lightStyles.skillTitles}>
+        <div className='hidden md:block'>
+          <div className='flex justify-around mt-10'>
+            <div className='w-1/3 flex flex-col items-center'>
+              <p className={isDarkMode ? darkStyles.skillTitles : lightStyles.skillTitles}>
+                Data Science/Analytics
+              </p>
+              <div className='flex justify-center h-[81px]'>
+                <img src={python} alt="Python" className='px-2'/>
+                <img src={R} alt="R" className='px-2'/>
+                <img src={powerBI} alt="Power BI" className='px-2'/>
+              </div>
+              <p className={isDarkMode ? darkStyles.skillDescriptions : lightStyles.skillDescriptions}>
+                I have experience with data science/analytics using Python, R, and Power BI.
+                <br /><br />
+                I am able to utilize libraries such as Pandas, Numpy, and Scikit-Learn to manipulate, analyze,
+                and predict data.
+                <br /><br />
+                I am then able to visualize that data with either Python/R libraries, or a
+                dashboarding tool such as Power BI.
+              </p>
+            </div>
+            <div className='w-1/3 flex flex-col items-center'>
+              <p className={isDarkMode ? darkStyles.skillTitles : lightStyles.skillTitles}>
+                Application Development
+              </p>
+              <div className='flex justify-center h-[81px]'>
+                <img src={java} alt="Java" className='px-2'/>
+                <img src={sql} alt="SQL" className='px-2'/>
+                <img src={C} alt="C" className='px-2'/>
+              </div>
+              <p className={isDarkMode ? darkStyles.skillDescriptions : lightStyles.skillDescriptions}>
+                I have experience with application development using Java, C, and SQL.
+                <br /><br />
+                My experience began in college, where I created projects that centered around the
+                concepts of object oriented programming, advanced data structures/algorithms, and computational
+                organization/design.
+              </p>
+            </div>
+            <div className='w-1/3 flex flex-col items-center'>
+              <p className={isDarkMode ? darkStyles.skillTitles : lightStyles.skillTitles}>
+                Web Development
+              </p>
+              <div className='flex justify-center h-[81px]'>
+                <img src={react} alt="React" className='px-2'/>
+                <img src={tailwind} alt="Javascript" className='px-2'/>
+                <img src={flask} alt="Flask" className={`px-[10px] ${isDarkMode ? "invert" : null}`}/>
+              </div>
+              <p className={isDarkMode ? darkStyles.skillDescriptions : lightStyles.skillDescriptions}>
+                I have experience with web development using React.js, HTML, CSS/Tailwind, Flask, and more.
+                <br /><br />
+                I am newer to website development, but I am quickly learning different libraries/frameworks
+                such as React.js, Flask, Tailwind, and more.
+                <br /><br />
+                Currently, I am working on side projects involving web development, such as this website.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className='md:hidden flex flex-col items-center'>
+          <div className='flex flex-col'>
+            <p className='text-center text-gray-200 text-xl mt-10'>
               Data Science/Analytics
             </p>
-            <div className='flex justify-center h-[81px]'>
-              <img src={python} alt="Python" className='px-2'/>
-              <img src={R} alt="R" className='px-2'/>
-              <img src={powerBI} alt="Power BI" className='px-2'/>
+            <div className='flex w-2/3 h-[50px] justify-evenly ml-auto mr-auto mt-5'>
+              <img src={python} alt="Python" />
+              <img src={R} alt="R" />
+              <img src={powerBI} alt="Power BI" />
             </div>
-            <p className={isDarkMode ? darkStyles.skillDescriptions : lightStyles.skillDescriptions}>
-              {/* I have experience with software tools such as Python, R, and Power BI for data science/analytics. */}
-              I have experience with data science/analytics using Python, R, and Power BI.
-              <br /><br />
-              I am able to utilize libraries such as Pandas, Numpy, and Scikit-Learn to manipulate, analyze,
-              and predict data.
-              <br /><br />
-              I am then able to visualize that data with either Python/R libraries, or a
-              dashboarding tool such as Power BI.
+            <p className='text-center text-gray-200 mt-5'>
+                I have experience with data science/analytics using Python, R, and Power BI.
+                <br /><br />
+                I am able to utilize libraries such as Pandas, Numpy, and Scikit-Learn to manipulate, analyze,
+                and predict data.
+                <br /><br />
+                I am then able to visualize that data with either Python/R libraries, or a
+                dashboarding tool such as Power BI.
             </p>
           </div>
-          <div className='w-1/3 flex flex-col items-center'>
-            <p className={isDarkMode ? darkStyles.skillTitles : lightStyles.skillTitles}>
+          <div className='flex flex-col'>
+            <p className='text-center text-gray-200 text-xl mt-20'>
               Application Development
             </p>
-            <div className='flex justify-center h-[81px]'>
-              <img src={java} alt="Java" className='px-2'/>
-              <img src={sql} alt="SQL" className='px-2'/>
-              <img src={C} alt="C" className='px-2'/>
+            <div className='flex w-2/3 h-[50px] justify-evenly ml-auto mr-auto mt-5'>
+              <img src={java} alt="Java" />
+              <img src={sql} alt="SQL" />
+              <img src={C} alt="C" />
             </div>
-            <p className={isDarkMode ? darkStyles.skillDescriptions : lightStyles.skillDescriptions}>
-              I have experience with application development using Java, C, and SQL.
-              <br /><br />
-              My experience began in college, where I created projects that centered around the
-              concepts of object oriented programming, advanced data structures/algorithms, and computational
-              organization/design.
-
+            <p className='text-center text-gray-200'>
+                I have experience with application development using Java, C, and SQL.
+                <br /><br />
+                My experience began in college, where I created projects that centered around the
+                concepts of object oriented programming, advanced data structures/algorithms, and computational
+                organization/design.
             </p>
           </div>
-          <div className='w-1/3 flex flex-col items-center'>
-            <p className={isDarkMode ? darkStyles.skillTitles : lightStyles.skillTitles}>
+          <div className='flex flex-col'>
+            <p className='text-center text-gray-200 text-xl mt-20'>
               Web Development
             </p>
-            <div className='flex justify-center h-[81px]'>
-              <img src={react} alt="React" className='px-2'/>
-              <img src={tailwind} alt="Javascript" className='px-2'/>
-              <img src={flask} alt="Flask" className={`px-2 ${isDarkMode ? "invert" : null}`}/>
+            <div className='flex w-2/3 h-[50px] justify-evenly ml-auto mr-auto mt-5'>
+              <img src={react} alt="React" />
+              <img src={tailwind} alt="TailwindCSS" />
+              <img src={flask} alt="Flask" className={`px-[1px] ${isDarkMode ? "invert" : null}`}/>
             </div>
-            <p className={isDarkMode ? darkStyles.skillDescriptions : lightStyles.skillDescriptions}>
-              I have experience with web development using React.js, HTML, CSS/Tailwind, Flask, and more.
-              <br /><br />
-              I am newer to website development, but I am quickly learning different libraries/frameworks
-              such as React.js, Flask, Tailwind, and more.
-              <br /><br />
-              Currently, I am working on side projects involving web development, including this website.
+            <p className='text-center text-gray-200'>
+                I have experience with web development using React.js, HTML, CSS/Tailwind, Flask, and more.
+                <br /><br />
+                I am newer to website development, but I am quickly learning different libraries/frameworks
+                such as React.js, Flask, Tailwind, and more.
+                <br /><br />
+                Currently, I am working on side projects involving web development, including this website.
             </p>
           </div>
+          
         </div>
       </div>
     </div>
