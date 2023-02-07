@@ -15,14 +15,18 @@ function Experience(props) {
     hr: ["mx-2 w-full h-1 border-0 bg-neutral-600 rounded"],
     exp: ["text-4xl md:text-6xl px-2 md:px-5 bg-neutral-800 text-gray-200 absolute"],
     skillTitles: ["text-3xl text-center pb-4 text-gray-200"],
-    skillDescriptions: ["pt-5 text-center w-4/5 text-gray-200"]
+    skillDescriptions: ["pt-5 text-center w-4/5 text-gray-200"],
+    mobileSkillTitle: ["text-center text-gray-200 text-xl mt-20"],
+    mobileSkillDescriptions: ["text-center text-gray-200"]
   }
   const lightStyles = {
     wrapper: ["flex flex-col pb-1"],
     hr: ["mx-2 w-full h-1 border-0 bg-gray-200 rounded"],
     exp: ["text-4xl md:text-6xl px-2 md:px-5 bg-white absolute"],
     skillTitles: ["text-3xl text-center pb-4"],
-    skillDescriptions: ["pt-5 text-center w-4/5"]
+    skillDescriptions: ["pt-5 text-center w-4/5"],
+    mobileSkillTitle: ["text-center text-xl mt-20"],
+    mobileSkillDescriptions: ["text-center"]
   }
   const isDarkMode = props.DarkMode;
 
@@ -96,7 +100,7 @@ function Experience(props) {
         </div>
         <div className='md:hidden flex flex-col items-center'>
           <div className='flex flex-col'>
-            <p className='text-center text-gray-200 text-xl mt-10'>
+            <p className={isDarkMode ? darkStyles.mobileSkillTitle : lightStyles.mobileSkillTitle}>
               Data Science/Analytics
             </p>
             <div className='flex w-2/3 h-[50px] justify-evenly ml-auto mr-auto mt-5'>
@@ -104,7 +108,7 @@ function Experience(props) {
               <img src={R} alt="R" />
               <img src={powerBI} alt="Power BI" />
             </div>
-            <p className='text-center text-gray-200 mt-5'>
+            <p className={isDarkMode ? darkStyles.mobileSkillDescriptions : lightStyles.mobileSkillDescriptions}>
                 I have experience with data science/analytics using Python, R, and Power BI.
                 <br /><br />
                 I am able to utilize libraries such as Pandas, Numpy, and Scikit-Learn to manipulate, analyze,
@@ -115,7 +119,7 @@ function Experience(props) {
             </p>
           </div>
           <div className='flex flex-col'>
-            <p className='text-center text-gray-200 text-xl mt-20'>
+            <p className={isDarkMode ? darkStyles.mobileSkillTitle : lightStyles.mobileSkillTitle}>
               Application Development
             </p>
             <div className='flex w-2/3 h-[50px] justify-evenly ml-auto mr-auto mt-5'>
@@ -123,7 +127,7 @@ function Experience(props) {
               <img src={sql} alt="SQL" />
               <img src={C} alt="C" />
             </div>
-            <p className='text-center text-gray-200'>
+            <p className={isDarkMode ? darkStyles.mobileSkillDescriptions : lightStyles.mobileSkillDescriptions}>
                 I have experience with application development using Java, C, and SQL.
                 <br /><br />
                 My experience began in college, where I created projects that centered around the
@@ -132,7 +136,7 @@ function Experience(props) {
             </p>
           </div>
           <div className='flex flex-col'>
-            <p className='text-center text-gray-200 text-xl mt-20'>
+            <p className={isDarkMode ? darkStyles.mobileSkillTitle : lightStyles.mobileSkillTitle}>
               Web Development
             </p>
             <div className='flex w-2/3 h-[50px] justify-evenly ml-auto mr-auto mt-5'>
@@ -140,16 +144,16 @@ function Experience(props) {
               <img src={tailwind} alt="TailwindCSS" />
               <img src={flask} alt="Flask" className={`px-[1px] ${isDarkMode ? "invert" : null}`}/>
             </div>
-            <p className='text-center text-gray-200'>
+            <p className={isDarkMode ? darkStyles.mobileSkillDescriptions : lightStyles.mobileSkillDescriptions}>
                 I have experience with web development using React.js, HTML, CSS/Tailwind, Flask, and more.
                 <br /><br />
                 I am newer to website development, but I am quickly learning different libraries/frameworks
                 such as React.js, Flask, Tailwind, and more.
                 <br /><br />
                 Currently, I am working on side projects involving web development, including this website.
+                <br /><br />
             </p>
           </div>
-          
         </div>
       </div>
     </div>
