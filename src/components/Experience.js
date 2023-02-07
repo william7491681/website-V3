@@ -13,16 +13,16 @@ function Experience(props) {
   const darkStyles = {
     wrapper: ["flex flex-col pb-1 bg-neutral-800"],
     hr: ["mx-2 w-full h-1 border-0 bg-neutral-600 rounded"],
-    exp: ["text-4xl md:text-6xl px-2 md:px-5 bg-neutral-800 text-gray-200 absolute"],
-    skillTitles: ["text-3xl text-center pb-4 text-gray-200"],
+    exp: ["text-4xl md:text-6xl font-yeseva font-semibold px-2 md:px-5 bg-neutral-800 text-gray-200 absolute"],
+    skillTitles: ["text-3xl text-center font-yeseva pb-4 text-gray-200"],
     skillDescriptions: ["pt-5 text-center w-4/5 text-gray-200"],
-    mobileSkillTitle: ["text-center text-gray-200 text-xl mt-20"],
-    mobileSkillDescriptions: ["text-center text-gray-200"]
+    mobileSkillTitle: ["text-center text-gray-200 font-yeseva text-xl mt-20"],
+    mobileSkillDescriptions: ["w-5/6 ml-auto mr-auto mt-5 font-light text-center text-gray-200"]
   }
   const lightStyles = {
     wrapper: ["flex flex-col pb-1"],
     hr: ["mx-2 w-full h-1 border-0 bg-gray-200 rounded"],
-    exp: ["text-4xl md:text-6xl px-2 md:px-5 bg-white absolute"],
+    exp: ["text-4xl md:text-6xl font-yeseva font-semibold px-2 md:px-5 bg-white absolute"],
     skillTitles: ["text-3xl text-center pb-4"],
     skillDescriptions: ["pt-5 text-center w-4/5"],
     mobileSkillTitle: ["text-center text-xl mt-20"],
@@ -99,7 +99,10 @@ function Experience(props) {
         </div>
         <div className='md:hidden flex flex-col items-center'>
           <div className='flex flex-col'>
-            <p className={isDarkMode ? darkStyles.mobileSkillTitle : lightStyles.mobileSkillTitle}>
+            <p className={isDarkMode?
+            "text-center text-gray-200 text-xl mt-10 font-yeseva"
+            :
+            "text-center text-xl mt-10 font-yeseva"}>
               Data Science/Analytics
             </p>
             <div className='flex w-2/3 h-[50px] justify-evenly ml-auto mr-auto mt-5'>
@@ -148,7 +151,7 @@ function Experience(props) {
                 <br /><br />
                 I am newer to website development, but I am quickly learning different libraries/frameworks.
                 <br /><br />
-                Currently, I am working on side projects involving web development, including this website.
+                Currently, I am working on side projects involving web development, such as website.
                 <br /><br />
             </p>
           </div>

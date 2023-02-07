@@ -6,6 +6,9 @@ module.exports = {
       backgroundImage: {
         "william": "url(../src/components/assets/William.jpg)"
       },
+      fontFamily: {
+        'yeseva': ["Yeseva One", "display"]
+      },
       keyframes: {
         menu: {
           "0%" : { opacity: "0"},

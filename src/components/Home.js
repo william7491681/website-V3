@@ -5,17 +5,17 @@ import william from "./assets/William.jpg"
 function Home(props) {
   const darkStyles = {
     home: ["flex flex-col md:flex-row justify-center pt-10 bg-neutral-800"],
-    HIWD: ["text-4xl md:text-6xl text-gray-200"],
-    leftList: ["mt-2 font-bold text-gray-200"],
-    rightList: ["mt-2 ml-[6px] text-gray-200"],
-    mobileRightList: ["mt-2 ml-4 text-gray-200"]
+    HIWD: ["text-4xl md:text-6xl text-gray-200 font-light"],
+    leftList: ["mt-2 font-semibold text-gray-200"],
+    rightList: ["mt-2 ml-[6px] font-light text-gray-200"],
+    mobileRightList: ["mt-2 ml-4 font-light text-gray-200"]
   }
   const lightStyles = {
     home: ["flex flex-col md:flex-row justify-center pt-10"],
     HIWD: ["text-4xl md:text-6xl"],
-    leftList: ["mt-2 font-bold"],
-    rightList: ["mt-2 ml-[6px]"],
-    mobileRightList: ["mt-2 ml-4"]
+    leftList: ["mt-2 font-semibold"],
+    rightList: ["mt-2 font-light ml-[6px]"],
+    mobileRightList: ["mt-2 font-light ml-4"]
   }
   const isDarkMode = props.DarkMode;
   return (
@@ -28,9 +28,9 @@ function Home(props) {
             <div className='w-5/6 md:flex md:flex-col justify-evenly'>
               <div>
                 <h1 className={isDarkMode ? darkStyles.HIWD : lightStyles.HIWD}>
-                  Hi, I'm William Dines
+                  Hi, I'm <span className='font-bold font-yeseva'>William Dines</span>
                 </h1>
-                <p className='text-sm md:text-lg text-blue-700'>
+                <p className='text-sm md:text-lg text-blue-700 font-light'>
                   Software Developer
                 </p>
               </div>

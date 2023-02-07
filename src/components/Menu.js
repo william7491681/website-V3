@@ -1,6 +1,5 @@
 import {React, useState, useRef} from 'react'
 import { FiMenu, FiPlus } from "react-icons/fi"
-import resume from "./assets/resume.pdf"
 
 function Menu(props) {
   const [Navigating, setNavigating] = useState(false)
@@ -54,7 +53,7 @@ function Menu(props) {
             </form>
           </li>
           <li className={isDarkMode ? darkStyles.li : lightStyles.li}>
-            <a href={resume} download="William-Dines-Resume" onClick={menuClicked}>Download Resume</a>
+            <a href="resume.pdf" download="William-Dines-Resume" onClick={menuClicked}>Download Resume</a>
           </li>
         </ul>
       </div>

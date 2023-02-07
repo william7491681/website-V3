@@ -4,14 +4,14 @@ function About(props) {
   const darkStyles = {
     wrapper: ["pt-28 bg-neutral-800"],
     hr: ["mx-2 w-full h-1 border-0 bg-neutral-600 rounded"],
-    about: ["text-4xl md:text-6xl px-2 md:px-5 bg-neutral-800 absolute text-gray-200"],
-    desc: ["text-center text-2xl text-gray-200 pt-10 md:pt-0"]
+    about: ["text-4xl md:text-6xl font-semibold font-yeseva px-2 md:px-5 bg-neutral-800 absolute text-gray-200"],
+    desc: ["text-center font-light text-2xl pt-10 md:pt-0 text-gray-200"]
   }
   const lightStyles = {
     wrapper: ["pt-28"],
     hr: ["mx-2 w-full h-1 border-0 bg-gray-200 rounded"],
-    about: ["text-4xl md:text-6xl px-2 md:px-5 bg-white absolute"],
-    desc: ["text-center text-2xl pt-10 md:pt-0"]
+    about: ["text-4xl md:text-6xl font-semibold font-yeseva px-2 md:px-5 bg-white absolute"],
+    desc: ["text-center font-light text-2xl pt-10 md:pt-0"]
   }
   const isDarkMode = props.DarkMode;
 
