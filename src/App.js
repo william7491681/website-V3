@@ -1,6 +1,6 @@
 import { React, useState } from 'react'
 import { Menu, Home, About, Experience, Footer } from "./components"
-import { MdDarkMode, MdOutlineDarkMode} from "react-icons/md"
+import { MdDarkMode, MdWbSunny} from "react-icons/md"
 
 function App() {
   const [DarkMode, setDarkMode] = useState(false)
@@ -9,11 +9,11 @@ function App() {
   }
   return (
     <div>
-      <div className='fixed right-20 mt-2 z-20'>
+      <div className='fixed right-20 mt-2'>
         { DarkMode ?
-          <MdDarkMode className="hover:cursor-pointer" size={35} onClick={toggleDarkMode}/>
+          <MdWbSunny className="hover:cursor-pointer text-white" size={35} onClick={toggleDarkMode}/>
           :
-          <MdOutlineDarkMode className="hover:cursor-pointer" size={35} onClick={toggleDarkMode}/>
+          <MdDarkMode className="hover:cursor-pointer text-black" size={35} onClick={toggleDarkMode}/>
         }
       </div>
       <Menu DarkMode={DarkMode}/>

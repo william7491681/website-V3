@@ -9,20 +9,36 @@ import tailwind from "./assets/tailwind.png"
 import react from "./assets/react.png"
 import flask from "./assets/flask.png"
 
-function Experience() {
+function Experience(props) {
+  const darkStyles = {
+    wrapper: ["flex flex-col pb-1 bg-neutral-800"],
+    hr: ["mx-2 w-full h-1 border-0 bg-neutral-600 rounded"],
+    exp: ["text-4xl md:text-6xl px-2 md:px-5 bg-neutral-800 text-gray-200 absolute"],
+    skillTitles: ["text-3xl text-center pb-4 text-gray-200"],
+    skillDescriptions: ["pt-5 text-center w-4/5 text-gray-200"]
+  }
+  const lightStyles = {
+    wrapper: ["flex flex-col pb-1"],
+    hr: ["mx-2 w-full h-1 border-0 bg-gray-200 rounded"],
+    exp: ["text-4xl md:text-6xl px-2 md:px-5 bg-white absolute"],
+    skillTitles: ["text-3xl text-center pb-4"],
+    skillDescriptions: ["pt-5 text-center w-4/5"]
+  }
+  const isDarkMode = props.DarkMode;
+
   return (
-    <div className='flex flex-col pb-1'>
+    <div className={isDarkMode ? darkStyles.wrapper : lightStyles.wrapper}>
       <div className='mt-28'>
         <div className='flex flex-col'>
           <div className='inline-flex items-center justify-center mb-14'>
-            <hr className='mx-2 w-full h-1 border-0 bg-gray-200 rounded'/>
-            <h1 className='text-4xl md:text-6xl px-2 md:px-5 bg-white absolute'
+            <hr className={isDarkMode ? darkStyles.hr : lightStyles.hr} />
+            <h1 className={isDarkMode ? darkStyles.exp : lightStyles.exp}
             id="Experience">Experience</h1>
           </div>
         </div>
         <div className='flex justify-around mt-20'>
           <div className='w-1/3 flex flex-col items-center'>
-            <p className='text-3xl text-center pb-4'>
+            <p className={isDarkMode ? darkStyles.skillTitles : lightStyles.skillTitles}>
               Data Science/Analytics
             </p>
             <div className='flex justify-center h-[81px]'>
@@ -30,7 +46,7 @@ function Experience() {
               <img src={R} alt="R" className='px-2'/>
               <img src={powerBI} alt="Power BI" className='px-2'/>
             </div>
-            <p className='pt-5 text-center w-4/5'>
+            <p className={isDarkMode ? darkStyles.skillDescriptions : lightStyles.skillDescriptions}>
               {/* I have experience with software tools such as Python, R, and Power BI for data science/analytics. */}
               I have experience with data science/analytics using Python, R, and Power BI.
               <br /><br />
@@ -42,7 +58,7 @@ function Experience() {
             </p>
           </div>
           <div className='w-1/3 flex flex-col items-center'>
-            <p className='text-3xl text-center pb-4'>
+            <p className={isDarkMode ? darkStyles.skillTitles : lightStyles.skillTitles}>
               Application Development
             </p>
             <div className='flex justify-center h-[81px]'>
@@ -50,7 +66,7 @@ function Experience() {
               <img src={sql} alt="SQL" className='px-2'/>
               <img src={C} alt="C" className='px-2'/>
             </div>
-            <p className='pt-5 text-center w-4/5'>
+            <p className={isDarkMode ? darkStyles.skillDescriptions : lightStyles.skillDescriptions}>
               I have experience with application development using Java, C, and SQL.
               <br /><br />
               My experience began in college, where I created projects that centered around the
@@ -60,15 +76,15 @@ function Experience() {
             </p>
           </div>
           <div className='w-1/3 flex flex-col items-center'>
-            <p className='text-3xl text-center pb-4'>
+            <p className={isDarkMode ? darkStyles.skillTitles : lightStyles.skillTitles}>
               Web Development
             </p>
             <div className='flex justify-center h-[81px]'>
               <img src={react} alt="React" className='px-2'/>
               <img src={tailwind} alt="Javascript" className='px-2'/>
-              <img src={flask} alt="Flask" className='px-2'/>
+              <img src={flask} alt="Flask" className={`px-2 ${isDarkMode ? "invert" : null}`}/>
             </div>
-            <p className='pt-5 text-center w-4/5'>
+            <p className={isDarkMode ? darkStyles.skillDescriptions : lightStyles.skillDescriptions}>
               I have experience with web development using React.js, HTML, CSS/Tailwind, Flask, and more.
               <br /><br />
               I am newer to website development, but I am quickly learning different libraries/frameworks
