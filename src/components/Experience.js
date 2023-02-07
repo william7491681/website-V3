@@ -67,8 +67,8 @@ function Experience(props) {
               </p>
               <div className='flex justify-center h-[81px]'>
                 <img src={java} alt="Java" className='px-2'/>
-                <img src={sql} alt="SQL" className='px-2'/>
                 <img src={C} alt="C" className='px-2'/>
+                <img src={sql} alt="SQL" className='px-2'/>
               </div>
               <p className={isDarkMode ? darkStyles.skillDescriptions : lightStyles.skillDescriptions}>
                 I have experience with application development using Java, C, and SQL.
@@ -126,8 +126,8 @@ function Experience(props) {
             </p>
             <div className='flex w-2/3 h-[50px] justify-evenly ml-auto mr-auto mt-5'>
               <img src={java} alt="Java" />
-              <img src={sql} alt="SQL" />
               <img src={C} alt="C" />
+              <img src={sql} alt="SQL" />
             </div>
             <p className={isDarkMode ? darkStyles.mobileSkillDescriptions : lightStyles.mobileSkillDescriptions}>
                 I have experience with application development using Java, C, and SQL.
