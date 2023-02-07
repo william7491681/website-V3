@@ -12,7 +12,7 @@ function Home(props) {
   }
   const lightStyles = {
     home: ["flex flex-col md:flex-row justify-center pt-10"],
-    HIWD: ["text-4xl md:text-6xl"],
+    HIWD: ["text-4xl md:text-6xl font-light"],
     leftList: ["mt-2 font-semibold"],
     rightList: ["mt-2 font-light ml-[6px]"],
     mobileRightList: ["mt-2 font-light ml-4"]

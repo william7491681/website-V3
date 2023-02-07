@@ -23,7 +23,7 @@ function Experience(props) {
     wrapper: ["flex flex-col pb-1"],
     hr: ["mx-2 w-full h-1 border-0 bg-gray-200 rounded"],
     exp: ["text-4xl md:text-6xl font-yeseva font-semibold px-2 md:px-5 bg-white absolute"],
-    skillTitles: ["text-3xl text-center pb-4"],
+    skillTitles: ["text-3xl text-center font-yeseva pb-4"],
     skillDescriptions: ["pt-5 text-center w-4/5"],
     mobileSkillTitle: ["text-center text-xl mt-20"],
     mobileSkillDescriptions: ["text-center"]
