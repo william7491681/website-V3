@@ -46,7 +46,7 @@ function Experience(props) {
               <p className={isDarkMode ? darkStyles.skillTitles : lightStyles.skillTitles}>
                 Data Science/Analytics
               </p>
-              <div className='flex justify-center h-[81px]'>
+              <div className='flex justify-center h-[81px] w-1/4'>
                 <img src={python} alt="Python" className='px-2'/>
                 <img src={R} alt="R" className='px-2'/>
                 <img src={powerBI} alt="Power BI" className='px-2'/>
@@ -65,7 +65,7 @@ function Experience(props) {
               <p className={isDarkMode ? darkStyles.skillTitles : lightStyles.skillTitles}>
                 Application Development
               </p>
-              <div className='flex justify-center h-[81px]'>
+              <div className='flex justify-center h-[81px] w-1/4'>
                 <img src={java} alt="Java" className='px-2'/>
                 <img src={C} alt="C" className='px-2'/>
                 <img src={sql} alt="SQL" className='px-2'/>
@@ -82,7 +82,7 @@ function Experience(props) {
               <p className={isDarkMode ? darkStyles.skillTitles : lightStyles.skillTitles}>
                 Web Development
               </p>
-              <div className='flex justify-center h-[81px]'>
+              <div className='flex justify-center h-[81px] w-1/4'>
                 <img src={react} alt="React" className='px-2'/>
                 <img src={tailwind} alt="Javascript" className='px-2'/>
                 <img src={flask} alt="Flask" className={`px-[10px] ${isDarkMode ? "invert" : null}`}/>
