@@ -36,14 +36,14 @@ function Home(props) {
               </div>
               <div className='hidden md:flex text-2xl content-between'>
                 <div>
-                  <p className={isDarkMode ? darkStyles.leftList : lightStyles.leftList}>Address: </p>
+                  {/* <p className={isDarkMode ? darkStyles.leftList : lightStyles.leftList}>Address: </p> */}
                   <p className={isDarkMode ? darkStyles.leftList : lightStyles.leftList}>Phone: </p>
                   <p className={isDarkMode ? darkStyles.leftList : lightStyles.leftList}>Email: </p>
                   <p className={isDarkMode ? darkStyles.leftList : lightStyles.leftList}>Linkedin: </p>
                   <p className={isDarkMode ? darkStyles.leftList : lightStyles.leftList}>Github: </p>
                 </div>
                 <div className='ml-5'>
-                  <p className={isDarkMode ? darkStyles.rightList : lightStyles.rightList}>152 S. Tish Drive</p>
+                  {/* <p className={isDarkMode ? darkStyles.rightList : lightStyles.rightList}>152 S. Tish Drive</p> */}
                   <p className={isDarkMode ? darkStyles.rightList : lightStyles.rightList}>(405)-888-2607</p>
                   <p className={isDarkMode ? darkStyles.rightList : lightStyles.rightList}>Williamdines@rocketmail.com</p>
                   <p className='mt-2'>
