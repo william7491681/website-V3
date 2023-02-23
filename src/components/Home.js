@@ -61,14 +61,14 @@ function Home(props) {
         </div>
       <div className='w-5/6 flex md:hidden items-start pl-2 pt-10 self-center'>
         <div>
-          <p className={isDarkMode ? darkStyles.leftList : lightStyles.leftList}>Address: </p>
+          {/* <p className={isDarkMode ? darkStyles.leftList : lightStyles.leftList}>Address: </p> */}
           <p className={isDarkMode ? darkStyles.leftList : lightStyles.leftList}>Phone: </p>
           <p className={isDarkMode ? darkStyles.leftList : lightStyles.leftList}>Email: </p>
           <p className={isDarkMode ? darkStyles.leftList : lightStyles.leftList}>Linkedin: </p>
           <p className={isDarkMode ? darkStyles.leftList : lightStyles.leftList}>Github: </p>
         </div>
         <div>
-          <p className={isDarkMode ? darkStyles.mobileRightList : lightStyles.mobileRightList}>152 S. Tish Drive</p>
+          {/* <p className={isDarkMode ? darkStyles.mobileRightList : lightStyles.mobileRightList}>152 S. Tish Drive</p> */}
           <p className={isDarkMode ? darkStyles.mobileRightList : lightStyles.mobileRightList}>(405)-888-2607</p>
           <p className={isDarkMode ? darkStyles.mobileRightList : lightStyles.mobileRightList}>Williamdines@rocketmail.com</p>
           <p className='mt-2 ml-3'>
